@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<siteData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="http://dd.weather.gc.ca/citypage_weather/schema/site.xsd">
+    <license>http://dd.weather.gc.ca/doc/LICENCE_GENERAL.txt</license>
+    <dateTime name="xmlCreation" zone="UTC" UTCOffset="0">
+        <year>2015</year>
+        <month name="January">01</month>
+        <day name="Friday">09</day>
+        <hour>04</hour>
+        <minute>05</minute>
+        <timeStamp>20150109040500</timeStamp>
+        <textSummary>Friday January 09, 2015 at 04:05 UTC</textSummary>
+    </dateTime>
+    <dateTime name="xmlCreation" zone="MST" UTCOffset="-7">
+        <year>2015</year>
+        <month name="January">01</month>
+        <day name="Thursday">08</day>
+        <hour>21</hour>
+        <minute>05</minute>
+        <timeStamp>20150108210500</timeStamp>
+        <textSummary>Thursday January 08, 2015 at 21:05 MST</textSummary>
+    </dateTime>
+    <location>
+        <continent>North America</continent>
+        <country code="ca">Canada</country>
+        <province code="ab">Alberta</province>
+        <name code="s0000045" lat="53.53N" lon="113.49W">Edmonton</name>
+        <region>City of Edmonton - St. Albert - Sherwood Park</region>
+    </location>
+    <warnings url="http://weather.gc.ca/warnings/report_e.html?ab10">
+        <event type="warning" priority="high" description="EXTREME COLD WARNING IN EFFECT">
+            <dateTime name="eventIssue" zone="UTC" UTCOffset="0">
+                <year>2015</year>
+                <month name="January">01</month>
+                <day name="Friday">09</day>
+                <hour>03</hour>
+                <minute>19</minute>
+                <timeStamp>20150109031900</timeStamp>
+                <textSummary>Friday January 09, 2015 at 03:19 UTC</textSummary>
+            </dateTime>
+            <dateTime name="eventIssue" zone="MST" UTCOffset="-7">
+                <year>2015</year>
+                <month name="January">01</month>
+                <day name="Thursday">08</day>
+                <hour>20</hour>
+                <minute>19</minute>
+                <timeStamp>20150108201900</timeStamp>
+                <textSummary>Thursday January 08, 2015 at 20:19 MST</textSummary>
+            </dateTime>
+        </event>
+    </warnings>
+    <currentConditions>
+        <station code="yxd" lat="53.57N" lon="113.52W">Edmonton City Centre Airport</station>
+        <dateTime name="observation" zone="UTC" UTCOffset="0">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Friday">09</day>
+            <hour>04</hour>
+            <minute>00</minute>
+            <timeStamp>20150109040000</timeStamp>
+            <textSummary>Friday January 09, 2015 at 04:00 UTC</textSummary>
+        </dateTime>
+        <dateTime name="observation" zone="MST" UTCOffset="-7">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>21</hour>
+            <minute>00</minute>
+            <timeStamp>20150108210000</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 21:00 MST</textSummary>
+        </dateTime>
+        <condition>Clear</condition>
+        <iconCode format="gif">30</iconCode>
+        <temperature unitType="metric" units="C">-20.0</temperature>
+        <dewpoint unitType="metric" units="C">-23.5</dewpoint>
+        <windChill unitType="metric">-23</windChill>
+        <pressure unitType="metric" units="kPa" change="0.23" tendency="falling">104.3</pressure>
+        <visibility unitType="metric" units="km">14.5</visibility>
+        <relativeHumidity units="%">74</relativeHumidity>
+        <wind>
+            <speed unitType="metric" units="km/h">4</speed>
+            <gust unitType="metric" units="km/h"/>
+            <direction>NW</direction>
+            <bearing units="degrees">315.0</bearing>
+        </wind>
+    </currentConditions>
+    <forecastGroup>
+        <dateTime name="forecastIssue" zone="UTC" UTCOffset="0">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>23</hour>
+            <minute>00</minute>
+            <timeStamp>20150108230000</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 23:00 UTC</textSummary>
+        </dateTime>
+        <dateTime name="forecastIssue" zone="MST" UTCOffset="-7">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>16</hour>
+            <minute>00</minute>
+            <timeStamp>20150108160000</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 16:00 MST</textSummary>
+        </dateTime>
+        <regionalNormals>
+            <textSummary>Low minus 19. High minus 8.</textSummary>
+            <temperature unitType="metric" units="C" class="high">-8</temperature>
+            <temperature unitType="metric" units="C" class="low">-19</temperature>
+        </regionalNormals>
+        <forecast>
+            <period textForecastName="Tonight">Thursday night</period>
+            <textSummary>Clear. Wind northwest 20 km/h gusting to 40 becoming light this evening. Low minus 21. Wind
+                chill minus 29.
+            </textSummary>
+            <cloudPrecip>
+                <textSummary>Clear.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">30</iconCode>
+                <pop units="%"/>
+                <textSummary>Clear</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>Low minus 21.</textSummary>
+                <temperature unitType="metric" units="C" class="low">-21</temperature>
+            </temperatures>
+            <winds>
+                <textSummary>Wind northwest 20 km/h gusting to 40 becoming light this evening.</textSummary>
+                <wind index="1" rank="major">
+                    <speed unitType="metric" units="km/h">20</speed>
+                    <gust unitType="metric" units="km/h">40</gust>
+                    <direction>NW</direction>
+                    <bearing units="degrees">32</bearing>
+                </wind>
+                <wind index="2" rank="major">
+                    <speed unitType="metric" units="km/h">10</speed>
+                    <gust unitType="metric" units="km/h">00</gust>
+                    <direction>W</direction>
+                    <bearing units="degrees">27</bearing>
+                </wind>
+                <wind index="3" rank="minor">
+                    <speed unitType="metric" units="km/h">05</speed>
+                    <gust unitType="metric" units="km/h">00</gust>
+                    <direction>VR</direction>
+                    <bearing units="degrees">99</bearing>
+                </wind>
+            </winds>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <windChill>
+                <textSummary>Wind chill minus 29.</textSummary>
+                <calculated unitType="metric">-29</calculated>
+            </windChill>
+            <relativeHumidity units="%">75</relativeHumidity>
+        </forecast>
+        <forecast>
+            <period textForecastName="Friday">Friday</period>
+            <textSummary>Increasing cloudiness late in the morning. Wind up to 15 km/h. High minus 14. Wind chill minus
+                25 in the morning.
+            </textSummary>
+            <cloudPrecip>
+                <textSummary>Increasing cloudiness late in the morning.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">04</iconCode>
+                <pop units="%"/>
+                <textSummary>Increasing cloudiness</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>High minus 14.</textSummary>
+                <temperature unitType="metric" units="C" class="high">-14</temperature>
+            </temperatures>
+            <winds>
+                <textSummary>Wind up to 15 km/h.</textSummary>
+                <wind index="1" rank="major">
+                    <speed unitType="metric" units="km/h">05</speed>
+                    <gust unitType="metric" units="km/h">00</gust>
+                    <direction>VR</direction>
+                    <bearing units="degrees">99</bearing>
+                </wind>
+                <wind index="2" rank="major">
+                    <speed unitType="metric" units="km/h">10</speed>
+                    <gust unitType="metric" units="km/h">00</gust>
+                    <direction>SE</direction>
+                    <bearing units="degrees">14</bearing>
+                </wind>
+                <wind index="3" rank="minor">
+                    <speed unitType="metric" units="km/h">10</speed>
+                    <gust unitType="metric" units="km/h">00</gust>
+                    <direction>W</direction>
+                    <bearing units="degrees">27</bearing>
+                </wind>
+            </winds>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <windChill>
+                <textSummary>Wind chill minus 25 in the morning.</textSummary>
+                <calculated unitType="metric">-25</calculated>
+            </windChill>
+            <relativeHumidity units="%">70</relativeHumidity>
+        </forecast>
+        <forecast>
+            <period textForecastName="Friday night">Friday night</period>
+            <textSummary>Cloudy. Low minus 18.</textSummary>
+            <cloudPrecip>
+                <textSummary>Cloudy.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">10</iconCode>
+                <pop units="%"/>
+                <textSummary>Cloudy</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>Low minus 18.</textSummary>
+                <temperature unitType="metric" units="C" class="low">-18</temperature>
+            </temperatures>
+            <winds/>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <relativeHumidity units="%">65</relativeHumidity>
+        </forecast>
+        <forecast>
+            <period textForecastName="Saturday">Saturday</period>
+            <textSummary>A mix of sun and cloud. High minus 15.</textSummary>
+            <cloudPrecip>
+                <textSummary>A mix of sun and cloud.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">02</iconCode>
+                <pop units="%"/>
+                <textSummary>A mix of sun and cloud</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>High minus 15.</textSummary>
+                <temperature unitType="metric" units="C" class="high">-15</temperature>
+            </temperatures>
+            <winds/>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <relativeHumidity units="%">35</relativeHumidity>
+        </forecast>
+        <forecast>
+            <period textForecastName="Sunday">Sunday</period>
+            <textSummary>Sunny. Low minus 23. High minus 13.</textSummary>
+            <cloudPrecip>
+                <textSummary>Sunny.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">00</iconCode>
+                <pop units="%"/>
+                <textSummary>Sunny</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>Low minus 23. High minus 13.</textSummary>
+                <temperature unitType="metric" units="C" class="high">-13</temperature>
+                <temperature unitType="metric" units="C" class="low">-23</temperature>
+            </temperatures>
+            <winds/>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <relativeHumidity units="%">35</relativeHumidity>
+        </forecast>
+        <forecast>
+            <period textForecastName="Monday">Monday</period>
+            <textSummary>Sunny. Low minus 14. High minus 5.</textSummary>
+            <cloudPrecip>
+                <textSummary>Sunny.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">00</iconCode>
+                <pop units="%"/>
+                <textSummary>Sunny</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>Low minus 14. High minus 5.</textSummary>
+                <temperature unitType="metric" units="C" class="high">-5</temperature>
+                <temperature unitType="metric" units="C" class="low">-14</temperature>
+            </temperatures>
+            <winds/>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <relativeHumidity units="%">40</relativeHumidity>
+        </forecast>
+        <forecast>
+            <period textForecastName="Tuesday">Tuesday</period>
+            <textSummary>A mix of sun and cloud. Low minus 7. High plus 4.</textSummary>
+            <cloudPrecip>
+                <textSummary>A mix of sun and cloud.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">02</iconCode>
+                <pop units="%"/>
+                <textSummary>A mix of sun and cloud</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>Low minus 7. High plus 4.</textSummary>
+                <temperature unitType="metric" units="C" class="high">4</temperature>
+                <temperature unitType="metric" units="C" class="low">-7</temperature>
+            </temperatures>
+            <winds/>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <relativeHumidity units="%">65</relativeHumidity>
+        </forecast>
+        <forecast>
+            <period textForecastName="Wednesday">Wednesday</period>
+            <textSummary>A mix of sun and cloud. Low minus 1. High 6.</textSummary>
+            <cloudPrecip>
+                <textSummary>A mix of sun and cloud.</textSummary>
+            </cloudPrecip>
+            <abbreviatedForecast>
+                <iconCode format="gif">02</iconCode>
+                <pop units="%"/>
+                <textSummary>A mix of sun and cloud</textSummary>
+            </abbreviatedForecast>
+            <temperatures>
+                <textSummary>Low minus 1. High 6.</textSummary>
+                <temperature unitType="metric" units="C" class="high">6</temperature>
+                <temperature unitType="metric" units="C" class="low">-1</temperature>
+            </temperatures>
+            <winds/>
+            <precipitation>
+                <textSummary/>
+                <precipType start="" end=""/>
+            </precipitation>
+            <relativeHumidity units="%">55</relativeHumidity>
+        </forecast>
+    </forecastGroup>
+    <yesterdayConditions>
+        <temperature unitType="metric" units="C" class="high">-7.4</temperature>
+        <temperature unitType="metric" units="C" class="low">-19.1</temperature>
+        <precip unitType="metric" units="mm">2.5</precip>
+    </yesterdayConditions>
+    <riseSet>
+        <disclaimer>The information provided here, for the times of the rise and set of the sun, is an estimate included
+            as a convenience to our clients. Values shown here may differ from the official sunrise/sunset data
+            available from (http://hia-iha.nrc-cnrc.gc.ca/sunrise_e.html)
+        </disclaimer>
+        <dateTime name="sunrise" zone="UTC" UTCOffset="0">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>15</hour>
+            <minute>48</minute>
+            <timeStamp>20150108154800</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 15:48 UTC</textSummary>
+        </dateTime>
+        <dateTime name="sunrise" zone="MST" UTCOffset="-7">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>08</hour>
+            <minute>48</minute>
+            <timeStamp>20150108084800</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 08:48 MST</textSummary>
+        </dateTime>
+        <dateTime name="sunset" zone="UTC" UTCOffset="0">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>23</hour>
+            <minute>33</minute>
+            <timeStamp>20150108233300</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 23:33 UTC</textSummary>
+        </dateTime>
+        <dateTime name="sunset" zone="MST" UTCOffset="-7">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>16</hour>
+            <minute>33</minute>
+            <timeStamp>20150108163300</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 16:33 MST</textSummary>
+        </dateTime>
+    </riseSet>
+    <almanac>
+        <temperature class="extremeMax" period="2006-2014" unitType="metric" units="C" year="2012">8.5</temperature>
+        <temperature class="extremeMin" period="2006-2014" unitType="metric" units="C" year="2009">-22.6</temperature>
+        <temperature class="normalMax" unitType="metric" units="C"/>
+        <temperature class="normalMin" unitType="metric" units="C"/>
+        <temperature class="normalMean" unitType="metric" units="C"/>
+        <precipitation class="extremeRainfall" period="-" unitType="metric" units="mm" year=""/>
+        <precipitation class="extremeSnowfall" period="-" unitType="metric" units="cm" year=""/>
+        <precipitation class="extremePrecipitation" period="2006-2013" unitType="metric" units="mm" year="2011">4.5
+        </precipitation>
+        <precipitation class="extremeSnowOnGround" period="-" unitType="metric" units="cm" year=""/>
+        <pop units="%"/>
+    </almanac>
+</siteData>
+

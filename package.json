@@ -1,0 +1,40 @@
+{
+  "name": "weather-envcanada",
+  "version": "0.0.1",
+  "description": "Provides weather data from Environment Canada in JSON format.",
+  "main": "lib/weather.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gilyes/node-weather-envcanada.git"
+  },
+  "keywords": [
+    "weather",
+    "environment",
+    "canada"
+  ],
+  "author": "George Ilyes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gilyes/node-weather-envcanada/issues"
+  },
+  "homepage": "https://github.com/gilyes/node-weather-envcanada",
+  "dependencies": {
+    "array.prototype.find": "^1.0.0",
+    "request": "^2.51.0",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.6",
+    "jit-grunt": "^0.9.0",
+    "mocha": "^2.1.0",
+    "nock": "^0.56.0",
+    "rewire": "^2.1.3"
+  }
+}

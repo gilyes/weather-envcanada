@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<siteData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="http://dd.weather.gc.ca/citypage_weather/schema/site.xsd">
+    <license>http://dd.weather.gc.ca/doc/LICENCE_GENERAL.txt</license>
+    <dateTime name="xmlCreation" zone="UTC" UTCOffset="0">
+        <year>2015</year>
+        <month name="January">01</month>
+        <day name="Friday">09</day>
+        <hour>04</hour>
+        <minute>05</minute>
+        <timeStamp>20150109040500</timeStamp>
+        <textSummary>Friday January 09, 2015 at 04:05 UTC</textSummary>
+    </dateTime>
+    <dateTime name="xmlCreation" zone="MST" UTCOffset="-7">
+        <year>2015</year>
+        <month name="January">01</month>
+        <day name="Thursday">08</day>
+        <hour>21</hour>
+        <minute>05</minute>
+        <timeStamp>20150108210500</timeStamp>
+        <textSummary>Thursday January 08, 2015 at 21:05 MST</textSummary>
+    </dateTime>
+    <location>
+        <continent>North America</continent>
+        <country code="ca">Canada</country>
+        <province code="ab">Alberta</province>
+        <name code="s0000045" lat="53.53N" lon="113.49W">Edmonton</name>
+        <region>City of Edmonton - St. Albert - Sherwood Park</region>
+    </location>
+    <warnings url="http://weather.gc.ca/warnings/report_e.html?ab10">
+        <event type="warning" priority="high" description="EXTREME COLD WARNING IN EFFECT">
+            <dateTime name="eventIssue" zone="UTC" UTCOffset="0">
+                <year>2015</year>
+                <month name="January">01</month>
+                <day name="Friday">09</day>
+                <hour>03</hour>
+                <minute>19</minute>
+                <timeStamp>20150109031900</timeStamp>
+                <textSummary>Friday January 09, 2015 at 03:19 UTC</textSummary>
+            </dateTime>
+            <dateTime name="eventIssue" zone="MST" UTCOffset="-7">
+                <year>2015</year>
+                <month name="January">01</month>
+                <day name="Thursday">08</day>
+                <hour>20</hour>
+                <minute>19</minute>
+                <timeStamp>20150108201900</timeStamp>
+                <textSummary>Thursday January 08, 2015 at 20:19 MST</textSummary>
+            </dateTime>
+        </event>
+    </warnings>
+    <currentConditions>
+        <station code="yxd" lat="53.57N" lon="113.52W">Edmonton City Centre Airport</station>
+        <dateTime name="observation" zone="UTC" UTCOffset="0">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Friday">09</day>
+            <hour>04</hour>
+            <minute>00</minute>
+            <timeStamp>20150109040000</timeStamp>
+            <textSummary>Friday January 09, 2015 at 04:00 UTC</textSummary>
+        </dateTime>
+        <dateTime name="observation" zone="MST" UTCOffset="-7">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>21</hour>
+            <minute>00</minute>
+            <timeStamp>20150108210000</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 21:00 MST</textSummary>
+        </dateTime>
+        <condition>Clear</condition>
+        <iconCode format="gif">30</iconCode>
+        <temperature unitType="metric" units="C">-20.0</temperature>
+        <dewpoint unitType="metric" units="C">-23.5</dewpoint>
+        <windChill unitType="metric">-23</windChill>
+        <pressure unitType="metric" units="kPa" change="0.23" tendency="falling">104.3</pressure>
+        <visibility unitType="metric" units="km">14.5</visibility>
+        <relativeHumidity units="%">74</relativeHumidity>
+        <wind>
+            <speed unitType="metric" units="km/h">4</speed>
+            <gust unitType="metric" units="km/h"/>
+            <direction>NW</direction>
+            <bearing units="degrees">315.0</bearing>
+        </wind>
+    </currentConditions>
+    <forecastGroup />
+    <yesterdayConditions>
+        <temperature unitType="metric" units="C" class="high">-7.4</temperature>
+        <temperature unitType="metric" units="C" class="low">-19.1</temperature>
+        <precip unitType="metric" units="mm">2.5</precip>
+    </yesterdayConditions>
+    <riseSet>
+        <disclaimer>The information provided here, for the times of the rise and set of the sun, is an estimate included
+            as a convenience to our clients. Values shown here may differ from the official sunrise/sunset data
+            available from (http://hia-iha.nrc-cnrc.gc.ca/sunrise_e.html)
+        </disclaimer>
+        <dateTime name="sunrise" zone="UTC" UTCOffset="0">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>15</hour>
+            <minute>48</minute>
+            <timeStamp>20150108154800</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 15:48 UTC</textSummary>
+        </dateTime>
+        <dateTime name="sunrise" zone="MST" UTCOffset="-7">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>08</hour>
+            <minute>48</minute>
+            <timeStamp>20150108084800</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 08:48 MST</textSummary>
+        </dateTime>
+        <dateTime name="sunset" zone="UTC" UTCOffset="0">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>23</hour>
+            <minute>33</minute>
+            <timeStamp>20150108233300</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 23:33 UTC</textSummary>
+        </dateTime>
+        <dateTime name="sunset" zone="MST" UTCOffset="-7">
+            <year>2015</year>
+            <month name="January">01</month>
+            <day name="Thursday">08</day>
+            <hour>16</hour>
+            <minute>33</minute>
+            <timeStamp>20150108163300</timeStamp>
+            <textSummary>Thursday January 08, 2015 at 16:33 MST</textSummary>
+        </dateTime>
+    </riseSet>
+    <almanac>
+        <temperature class="extremeMax" period="2006-2014" unitType="metric" units="C" year="2012">8.5</temperature>
+        <temperature class="extremeMin" period="2006-2014" unitType="metric" units="C" year="2009">-22.6</temperature>
+        <temperature class="normalMax" unitType="metric" units="C"/>
+        <temperature class="normalMin" unitType="metric" units="C"/>
+        <temperature class="normalMean" unitType="metric" units="C"/>
+        <precipitation class="extremeRainfall" period="-" unitType="metric" units="mm" year=""/>
+        <precipitation class="extremeSnowfall" period="-" unitType="metric" units="cm" year=""/>
+        <precipitation class="extremePrecipitation" period="2006-2013" unitType="metric" units="mm" year="2011">4.5
+        </precipitation>
+        <precipitation class="extremeSnowOnGround" period="-" unitType="metric" units="cm" year=""/>
+        <pop units="%"/>
+    </almanac>
+</siteData>
+
