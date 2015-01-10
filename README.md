@@ -7,7 +7,7 @@ weather.getWeatherBySiteName("Edmonton", "AB", function(error, weatherData) {});
 weather.getWeatherBySiteCode("s0000045", "AB", function(error, weatherData) {});
 ```
 #### Result: ####
-```json
+```javascript
 {
   "temperature": "-22.7°C",
   "conditions": "Light Snow",
@@ -33,7 +33,7 @@ weather.getWeatherBySiteCode("s0000045", "AB", function(error, weatherData) {});
 weather.getSiteByName("Edmonton", "AB", function(error, site) {});
 ```
 #### Result: ####
-```json
+```javascript
 {
   "siteName": "Edmonton",
   "code": "s0000045",
