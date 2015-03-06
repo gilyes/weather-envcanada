@@ -1,15 +1,20 @@
 # Retrieve weather data from Environment Canada #
+
 ## Getting weather ##
+
 ```javascript
 var weather = require("weather-envcanada");
 
 weather.getWeatherBySiteName("Edmonton", "AB", function(error, weatherData) {});
 weather.getWeatherBySiteCode("s0000045", "AB", function(error, weatherData) {});
 ```
+
 #### Result: ####
+
 ```javascript
 {
-  "temperature": "-22.7°C",
+  "temperature": "-23",
+  "temperatureUnit": "C",
   "conditions": "Light Snow",
   "warnings": [
     {
@@ -28,11 +33,15 @@ weather.getWeatherBySiteCode("s0000045", "AB", function(error, weatherData) {});
   ]
 }
 ```
+
 ## Getting site code ##
+
 ```javascript
 weather.getSiteByName("Edmonton", "AB", function(error, site) {});
 ```
+
 #### Result: ####
+
 ```javascript
 {
   "siteName": "Edmonton",
