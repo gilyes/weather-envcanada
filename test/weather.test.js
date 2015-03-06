@@ -18,7 +18,7 @@ describe("weather", function() {
                 .reply(200, weatherXml);
 
             weather.getWeatherBySiteName("Edmonton", "AB", function(error, weather) {
-                expect(weather).to.have.property('temperature', '-20.0°C');
+                expect(weather).to.have.property('temperature', '-20');
                 done();
             });
         });
@@ -44,7 +44,7 @@ describe("weather", function() {
                 .reply(200, xml);
 
             weather.getWeatherBySiteCode("s0000045", "AB", function(error, weather) {
-                expect(weather).to.have.property('temperature', '-20.0°C');
+                expect(weather).to.have.property('temperature', '-20');
                 done();
             });
         });
@@ -147,7 +147,15 @@ describe("weather", function() {
         it("should parse out current temperature", function(done) {
             var xml = fs.readFileSync('test/data/cityWeather.xml', 'utf8');
             parseWeatherXml(xml, function(error, weatherData) {
-                expect(weatherData).to.have.property('temperature', '-20.0°C');
+                expect(weatherData).to.have.property('temperature', '-20');
+                done();
+            });
+        });
+
+        it("should parse out current temperature unit", function(done) {
+            var xml = fs.readFileSync('test/data/cityWeather.xml', 'utf8');
+            parseWeatherXml(xml, function(error, weatherData) {
+                expect(weatherData).to.have.property('temperatureUnit', 'C');
                 done();
             });
         });
