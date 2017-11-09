@@ -198,10 +198,15 @@ describe("weather", function() {
                     .with.length.of('8')
                     .with.deep.property('[0]')
                     .that.deep.equals({
+                        cloudPopTextSummary: `Clear.`,
                         period: 'Thursday night',
-                        summary: 'Clear.',
-                        temperature: 'Low minus 21.',
-                        pop: ''
+                        pop: '',
+                        popTextSummary: ``,
+                        relativeHumidityPercent: '75',
+                        summary: `Clear.`,
+                        temperature: `Low minus 21.`,
+                        weatherTextSummary: `Clear. Wind northwest 20 km/h gusting to 40 becoming light this evening. Low minus 21. Wind\r\n                chill minus 29.\r\n            `,
+                        windTextSummary: `Wind northwest 20 km/h gusting to 40 becoming light this evening.`
                     });
                 done();
             });

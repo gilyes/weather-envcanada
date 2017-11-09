@@ -1,6 +1,6 @@
 {
   "name": "weather-envcanada",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides weather data from Environment Canada in JSON format.",
   "main": "lib/weather.js",
   "scripts": {
@@ -33,6 +33,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-test": "^0.12.6",
     "jit-grunt": "^0.9.0",
+    "minimatch": "^3.0.4",
     "mocha": "^2.1.0",
     "nock": "^0.56.0",
     "rewire": "^2.1.3"
