@@ -24,10 +24,16 @@ weather.getWeatherBySiteCode("s0000045", "AB", function(error, weatherData) {});
   ],
   "forecasts": [
     {
-      "period": "Friday night",
-      "summary": "Snow.",
-      "temperature": "Low minus 24.",
-      "pop": ""
+      "period": "Thursday night",
+      "temperature": "Low minus 21.",
+      "pop": "",
+      "popSummary": "",
+      "cloudPopSummary": "Clear.",
+      "relativeHumidityPercent": "75",
+      "windSummary": "Wind northwest 20 km/h gusting to 40 becoming light this evening.",
+      "windChillSummary": "Wind chill minus 29."
+      "summary": "Clear.",
+      "fullSummary": "Clear. Wind northwest 20 km/h gusting to 40 becoming light this evening. Low minus 21. Wind\r\n                chill minus 29.\r\n            ",
     },
     ...
   ]
