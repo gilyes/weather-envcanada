@@ -212,6 +212,16 @@ describe("weather", function() {
                 done();
             });
         });
+        
+        it("should parse out forecast with blank windChillSummary if no windChill data exists", function(done) {
+            var xml = fs.readFileSync('test/data/cityWeather.xml', 'utf8');
+            parseWeatherXml(xml, function(error, weatherData) {
+                expect(weatherData.forecasts[2]).to.have.property('windChillSummary')
+                    .that.is.a('string')
+                    .with.length.of('0')
+                done();
+            });
+        });
 
         it("should parse empty forecasts when no forecasts", function(done) {
             var xml = fs.readFileSync('test/data/cityWeather-noforecasts.xml', 'utf8');
