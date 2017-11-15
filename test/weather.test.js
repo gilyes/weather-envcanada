@@ -198,16 +198,27 @@ describe("weather", function() {
                     .with.length.of('8')
                     .with.deep.property('[0]')
                     .that.deep.equals({
-                        cloudPopTextSummary: `Clear.`,
                         period: 'Thursday night',
-                        pop: '',
-                        popTextSummary: ``,
-                        relativeHumidityPercent: '75',
-                        summary: `Clear.`,
                         temperature: `Low minus 21.`,
-                        weatherTextSummary: `Clear. Wind northwest 20 km/h gusting to 40 becoming light this evening. Low minus 21. Wind\r\n                chill minus 29.\r\n            `,
-                        windTextSummary: `Wind northwest 20 km/h gusting to 40 becoming light this evening.`
+                        pop: '',
+                        popSummary: ``,
+                        cloudPopSummary: `Clear.`,
+                        relativeHumidityPercent: '75',
+                        windSummary: `Wind northwest 20 km/h gusting to 40 becoming light this evening.`,
+                        windChillSummary: `Wind chill minus 29.`,
+                        summary: `Clear.`,
+                        fullSummary: `Clear. Wind northwest 20 km/h gusting to 40 becoming light this evening. Low minus 21. Wind\r\n                chill minus 29.\r\n            `
                     });
+                done();
+            });
+        });
+        
+        it("should parse out forecast with blank windChillSummary if no windChill data exists", function(done) {
+            var xml = fs.readFileSync('test/data/cityWeather.xml', 'utf8');
+            parseWeatherXml(xml, function(error, weatherData) {
+                expect(weatherData.forecasts[2]).to.have.property('windChillSummary')
+                    .that.is.a('string')
+                    .with.length.of('0')
                 done();
             });
         });
