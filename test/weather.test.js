@@ -8,12 +8,12 @@ describe("weather", function() {
     describe(".getWeatherBySiteName()", function() {
         it("should return weather data for existing site name", function(done) {
             var siteListXml = fs.readFileSync('test/data/siteList.xml', 'utf8');
-            nock('http://dd.weatheroffice.ec.gc.ca')
+            nock('http://dd.weather.gc.ca')
                 .get('/citypage_weather/xml/siteList.xml')
                 .reply(200, siteListXml);
 
             var weatherXml = fs.readFileSync('test/data/cityWeather.xml', 'utf8');
-            nock('http://dd.weatheroffice.ec.gc.ca')
+            nock('http://dd.weather.gc.ca')
                 .get('/citypage_weather/xml/AB/s0000045_e.xml')
                 .reply(200, weatherXml);
 
@@ -25,7 +25,7 @@ describe("weather", function() {
 
         it("should return no weather data for invalid site name", function(done) {
             // Nock doesn't seem to set error in callback when replying with error status
-            //nock('http://dd.weatheroffice.ec.gc.ca')
+            //nock('http://dd.weather.gc.ca')
             //    .get('/citypage_weather/xml/AB/INVALIDCODE_e.xml')
             //    .reply(404);
 
@@ -39,7 +39,7 @@ describe("weather", function() {
     describe(".getWeatherBySiteCode()", function() {
         it("should return weather data for existing site code", function(done) {
             var xml = fs.readFileSync('test/data/cityWeather.xml', 'utf8');
-            nock('http://dd.weatheroffice.ec.gc.ca')
+            nock('http://dd.weather.gc.ca')
                 .get('/citypage_weather/xml/AB/s0000045_e.xml')
                 .reply(200, xml);
 
@@ -51,7 +51,7 @@ describe("weather", function() {
 
         it("should return no weather data for invalid site code", function(done) {
             // Nock doesn't seem to set error in callback when replying with error status
-            //nock('http://dd.weatheroffice.ec.gc.ca')
+            //nock('http://dd.weather.gc.ca')
             //    .get('/citypage_weather/xml/AB/INVALIDCODE_e.xml')
             //    .reply(404);
 
@@ -66,7 +66,7 @@ describe("weather", function() {
 
         it("should return existing site (matching casing)", function(done) {
             var xml = fs.readFileSync('test/data/siteList.xml', 'utf8');
-            nock('http://dd.weatheroffice.ec.gc.ca')
+            nock('http://dd.weather.gc.ca')
                 .get('/citypage_weather/xml/siteList.xml')
                 .reply(200, xml);
 
@@ -82,7 +82,7 @@ describe("weather", function() {
 
         it("should return existing site (different casing)", function(done) {
             var xml = fs.readFileSync('test/data/siteList.xml', 'utf8');
-            nock('http://dd.weatheroffice.ec.gc.ca')
+            nock('http://dd.weather.gc.ca')
                 .get('/citypage_weather/xml/siteList.xml')
                 .reply(200, xml);
 
@@ -98,7 +98,7 @@ describe("weather", function() {
 
         it("should return error for non-existent site", function(done) {
             var xml = fs.readFileSync('test/data/siteList.xml', 'utf8');
-            nock('http://dd.weatheroffice.ec.gc.ca')
+            nock('http://dd.weather.gc.ca')
                 .get('/citypage_weather/xml/siteList.xml')
                 .reply(200, xml);
 
