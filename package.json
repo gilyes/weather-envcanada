@@ -1,6 +1,6 @@
 {
   "name": "weather-envcanada",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Provides weather data from Environment Canada in JSON format.",
   "main": "lib/weather.js",
   "scripts": {
